@@ -72,6 +72,12 @@ img { max-width: 100%; }
 
 a { color: inherit; }
 
+:focus-visible {
+  outline: 2px solid var(--color-persimmon);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
 .wrap {
   max-width: 1040px;
   margin: 0 auto;
@@ -156,7 +162,9 @@ p:last-child { margin-bottom: 0; }
 }
 
 .day-nav__link {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
   white-space: nowrap;
   padding: 8px 16px;
   border-radius: 999px;
@@ -527,7 +535,15 @@ p:last-child { margin-bottom: 0; }
   display: flex;
   flex-direction: column;
   gap: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.food-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lift);
+}
+
+.food-card .map-link { margin-top: auto; padding-top: 4px; }
 
 .food-card__icon {
   width: 52px;
@@ -619,6 +635,104 @@ p:last-child { margin-bottom: 0; }
   flex-direction: column;
   gap: 6px;
 }
+
+/* ---------- Packing checklist ---------- */
+.checklist-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 22px clamp(20px, 4vw, 28px);
+  margin-bottom: 32px;
+}
+
+.checklist-card__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+
+.checklist-card__head h3 {
+  font-size: 1.05rem;
+  font-family: var(--font-display);
+}
+
+.checklist-card__count {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-persimmon-dark);
+  white-space: nowrap;
+}
+
+.checklist-card__note {
+  color: var(--color-ink-soft);
+  font-size: 0.86rem;
+  margin-bottom: 16px;
+}
+
+.checklist-progress {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--color-bg-soft);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.checklist-progress__bar {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--color-persimmon), var(--color-gold));
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+.checklist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 8px 20px;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 4px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.checklist-item input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  accent-color: var(--color-persimmon);
+  cursor: pointer;
+}
+
+.checklist-item span {
+  font-size: 0.94rem;
+  color: var(--color-ink);
+}
+
+.checklist-item:has(input:checked) span {
+  color: var(--color-ink-soft);
+  text-decoration: line-through;
+  text-decoration-color: var(--color-optional);
+}
+
+.checklist-reset {
+  margin-top: 18px;
+  background: none;
+  border: none;
+  padding: 6px 0;
+  font-size: 0.82rem;
+  color: var(--color-ink-soft);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.checklist-reset:hover { color: var(--color-persimmon-dark); }
 
 .budget-table-wrap {
   overflow-x: auto;

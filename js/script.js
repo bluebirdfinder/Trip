@@ -80,6 +80,59 @@
     }
   }
 
+  // ---------- Packing checklist ----------
+  var checklistGrid = document.getElementById("checklistGrid");
+  if (checklistGrid) {
+    var STORAGE_KEY = "seoul-trip-packing-v1";
+    var checkboxes = Array.prototype.slice.call(checklistGrid.querySelectorAll("input[type=checkbox]"));
+    var countEl = document.getElementById("checklistCount");
+    var barEl = document.getElementById("checklistBar");
+    var resetBtn = document.getElementById("checklistReset");
+
+    function loadChecked() {
+      try {
+        return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+      } catch (e) {
+        return {};
+      }
+    }
+
+    function saveChecked(state) {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      } catch (e) {
+        /* storage unavailable, ignore */
+      }
+    }
+
+    function updateProgress() {
+      var done = checkboxes.filter(function (cb) { return cb.checked; }).length;
+      if (countEl) countEl.textContent = done + "/" + checkboxes.length + " 已準備";
+      if (barEl) barEl.style.width = (checkboxes.length ? (done / checkboxes.length) * 100 : 0) + "%";
+    }
+
+    var saved = loadChecked();
+    checkboxes.forEach(function (cb) {
+      var key = cb.getAttribute("data-item");
+      if (saved[key]) cb.checked = true;
+      cb.addEventListener("change", function () {
+        var state = loadChecked();
+        state[key] = cb.checked;
+        saveChecked(state);
+        updateProgress();
+      });
+    });
+    updateProgress();
+
+    if (resetBtn) {
+      resetBtn.addEventListener("click", function () {
+        checkboxes.forEach(function (cb) { cb.checked = false; });
+        saveChecked({});
+        updateProgress();
+      });
+    }
+  }
+
   // ---------- Back to top ----------
   var toTop = document.getElementById("toTop");
   if (toTop) {
