@@ -67,8 +67,8 @@
   // ---------- Countdown ----------
   var countdownEl = document.getElementById("countdown");
   if (countdownEl) {
-    var tripStart = new Date("2026-09-19T00:00:00+09:00");
-    var tripEnd = new Date("2026-09-23T23:59:59+09:00");
+    var tripStart = new Date("2026-09-20T12:25:00+08:00");
+    var tripEnd = new Date("2026-09-23T15:30:00+08:00");
     var now = new Date();
     if (now < tripStart) {
       var days = Math.ceil((tripStart - now) / (1000 * 60 * 60 * 24));

@@ -665,6 +665,110 @@ table.budget tr:last-child td { border-bottom: none; }
 .site-footer a { color: var(--color-persimmon-dark); text-decoration: none; }
 .site-footer a:hover { text-decoration: underline; }
 
+/* ---------- Flight card ---------- */
+.flight-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: clamp(20px, 4vw, 32px);
+  box-shadow: var(--shadow-soft);
+}
+
+.flight-card__title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.15rem;
+  margin-bottom: 20px;
+}
+
+.flight-leg {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 14px 18px;
+  align-items: start;
+  padding-block: 16px;
+}
+
+.flight-leg + .flight-leg {
+  border-top: 1px dashed var(--color-border);
+}
+
+.flight-leg__badge {
+  background: var(--color-celadon);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 4px 12px;
+  border-radius: 999px;
+  white-space: nowrap;
+  height: fit-content;
+}
+
+.flight-leg__date {
+  color: var(--color-ink-soft);
+  font-size: 0.88rem;
+  margin-bottom: 8px;
+}
+
+.flight-leg__route {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.flight-leg__point {
+  display: flex;
+  flex-direction: column;
+}
+
+.flight-leg__time {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.flight-leg__airport {
+  font-size: 0.86rem;
+  color: var(--color-ink-soft);
+}
+
+.flight-leg__arrow {
+  color: var(--color-persimmon);
+  font-size: 1.1rem;
+  flex: 1;
+  min-width: 40px;
+  text-align: center;
+}
+
+.flight-leg__meta {
+  margin-top: 8px;
+  font-size: 0.82rem;
+  color: var(--color-ink-soft);
+}
+
+.alert-box {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  background: #fbe4d6;
+  border: 1px solid #ecb28b;
+  border-radius: var(--radius-md);
+  padding: 16px 18px;
+  font-size: 0.92rem;
+  margin-top: 18px;
+}
+.alert-box__icon { font-size: 1.3rem; flex-shrink: 0; }
+.alert-box strong { color: var(--color-persimmon-dark); }
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .alert-box { background: #4a2f26; border-color: #6b4130; }
+}
+:root[data-theme="dark"] .alert-box { background: #4a2f26; border-color: #6b4130; }
+
 /* ---------- Reveal animation ---------- */
 .reveal {
   opacity: 0;
