@@ -343,6 +343,23 @@ p:last-child { margin-bottom: 0; }
 }
 
 /* ---------- Day sections ---------- */
+.day-section__photo {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: 28px;
+  box-shadow: var(--shadow-soft);
+  background: var(--color-bg-soft);
+}
+
+.day-section__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .day-section__header {
   display: flex;
   align-items: center;
@@ -531,11 +548,32 @@ p:last-child { margin-bottom: 0; }
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
-  padding: 22px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   gap: 10px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.food-card__photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: var(--color-bg-soft);
+}
+
+.food-card__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.food-card__body {
+  padding: 18px 22px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
 }
 
 .food-card:hover {
