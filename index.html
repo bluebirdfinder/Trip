@@ -1,0 +1,715 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>首爾慢活．四天三夜</title>
+<meta name="description" content="給表哥和我的首爾鬆散行程：吃吃喝喝為主、景點隨緣，附釜山交通懶人包與行前準備清單。" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥢</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700;900&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap site-header__bar">
+    <a class="brand" href="#hero">
+      <span class="brand__mark">🥢</span>
+      首爾慢活．四天三夜
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="dayNav">
+      ☰ 目錄
+    </button>
+  </div>
+  <nav class="day-nav" id="dayNav" aria-label="行程目錄">
+    <div class="wrap">
+      <ul class="day-nav__list">
+        <li><a class="day-nav__link" href="#overview">總覽</a></li>
+        <li><a class="day-nav__link" href="#day1">Day1 抵達</a></li>
+        <li><a class="day-nav__link" href="#day2">Day2 宮殿市集</a></li>
+        <li><a class="day-nav__link" href="#day3">Day3 潮流放空</a></li>
+        <li><a class="day-nav__link" href="#day4">Day4 夜景美食</a></li>
+        <li><a class="day-nav__link" href="#day5">Day5 賦歸</a></li>
+        <li><a class="day-nav__link" href="#food">美食清單</a></li>
+        <li><a class="day-nav__link" href="#busan">釜山順便去？</a></li>
+        <li><a class="day-nav__link" href="#prep">行前準備</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <svg class="hero__svg" viewBox="0 0 1200 360" preserveAspectRatio="xMidYMax slice" role="img" aria-label="首爾秋天天際線插畫">
+      <defs>
+        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#f6e2c8"/>
+          <stop offset="100%" stop-color="#faf5ec"/>
+        </linearGradient>
+        <linearGradient id="mtBack" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#e6cfae"/>
+          <stop offset="100%" stop-color="#e6cfae"/>
+        </linearGradient>
+      </defs>
+      <rect width="1200" height="360" fill="url(#sky)"/>
+      <circle cx="1000" cy="80" r="46" fill="#d9a441" opacity="0.85"/>
+      <path d="M0,220 Q120,150 260,205 Q380,150 520,210 Q650,160 800,215 Q950,165 1200,220 L1200,360 L0,360 Z" fill="#efd9b8"/>
+      <path d="M0,260 Q150,210 300,250 Q460,205 620,255 Q780,215 940,255 Q1080,220 1200,255 L1200,360 L0,360 Z" fill="#c4562f" opacity="0.18"/>
+      <!-- city blocks -->
+      <g fill="#232946">
+        <rect x="60" y="255" width="46" height="90"/>
+        <rect x="118" y="235" width="34" height="110"/>
+        <rect x="164" y="270" width="52" height="75"/>
+        <rect x="230" y="245" width="40" height="100"/>
+        <rect x="300" y="260" width="60" height="85"/>
+        <rect x="380" y="230" width="30" height="115"/>
+        <rect x="420" y="250" width="46" height="95"/>
+        <rect x="900" y="250" width="42" height="95"/>
+        <rect x="950" y="225" width="32" height="120"/>
+        <rect x="990" y="260" width="56" height="85"/>
+        <rect x="1060" y="240" width="40" height="105"/>
+        <rect x="1110" y="265" width="50" height="80"/>
+      </g>
+      <!-- N Seoul tower silhouette -->
+      <g fill="#232946">
+        <polygon points="680,345 700,140 706,140 726,345"/>
+        <ellipse cx="703" cy="150" rx="26" ry="16"/>
+        <rect x="699" y="118" width="8" height="22"/>
+      </g>
+      <!-- hanok roof accent -->
+      <path d="M500,345 L500,300 Q560,260 620,300 L620,345 Z" fill="#c4562f"/>
+      <path d="M486,303 Q560,250 634,303" stroke="#232946" stroke-width="6" fill="none" stroke-linecap="round"/>
+    </svg>
+
+    <div class="wrap hero__content">
+      <span class="hero__eyebrow">🍗 給表哥＋我的懶人首爾行 · 吃喝優先，景點隨緣</span>
+      <h1>首爾，<em>慢慢</em>晃就好</h1>
+      <p class="hero__subtitle">
+        表哥 9/19（六）～9/23（三）要去韓國出差順帶度假，工作型態偏遠距、行程本來就沒排，
+        我沒去過韓國就一起跟去了。這份行程走「吃吃喝喝為主、景點能去就去」的鬆散節奏，
+        每一項都可以隨心情跳過，沒有非做不可的事。
+      </p>
+      <div class="hero__meta">
+        <span class="pill">📅 2026/9/19（六）～9/23（三）．實際 5 天 4 夜</span>
+        <span class="pill" id="countdown">計算天數中…</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OVERVIEW ============ -->
+  <section class="section" id="overview">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="section__kicker">Overview</span>
+        <h2>五天四夜，一眼看完</h2>
+        <p>點卡片可以直接跳到當天細節。每天都刻意只排 1～2 個「主要目的地」，其餘都是彈性選項。</p>
+      </div>
+      <div class="overview-grid">
+        <a class="overview-card reveal" href="#day1">
+          <span class="overview-card__icon">✈️</span>
+          <span class="overview-card__date">Day 1 · 9/19（六）</span>
+          <h3>抵達，先躺平</h3>
+          <p>入境、辦網卡交通卡、明洞街邊小吃暖身</p>
+        </a>
+        <a class="overview-card reveal" href="#day2">
+          <span class="overview-card__icon">🏯</span>
+          <span class="overview-card__date">Day 2 · 9/20（日）</span>
+          <h3>宮殿與市場</h3>
+          <p>景福宮／北村散步、蔘雞湯、廣藏市場小吃</p>
+        </a>
+        <a class="overview-card reveal" href="#day3">
+          <span class="overview-card__icon">☕</span>
+          <span class="overview-card__date">Day 3 · 9/21（一）</span>
+          <h3>潮流放空日</h3>
+          <p>延南洞／聖水洞咖啡廳、漢江野餐配炸雞</p>
+        </a>
+        <a class="overview-card reveal" href="#day4">
+          <span class="overview-card__icon">🌆</span>
+          <span class="overview-card__date">Day 4 · 9/22（二）</span>
+          <h3>夜景與隱藏美食</h3>
+          <p>南山塔（可跳過）、醬油蟹、東大門夜購</p>
+        </a>
+        <a class="overview-card reveal" href="#day5">
+          <span class="overview-card__icon">🧳</span>
+          <span class="overview-card__date">Day 5 · 9/23（三）</span>
+          <h3>賦歸</h3>
+          <p>補一頓喜歡的早餐、掃貨戰利品、機場</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DAY 1 ============ -->
+  <section class="section day-section" id="day1">
+    <div class="wrap">
+      <div class="day-section__header reveal">
+        <span class="day-section__badge" style="background:#fbe4d6;">✈️</span>
+        <div>
+          <div class="day-section__date">Day 1 · 2026/9/19（六）</div>
+          <h2>抵達日：不用急，先讓身體適應</h2>
+        </div>
+      </div>
+      <p class="day-section__intro reveal">
+        第一天什麼都不用勉強，把「順利抵達、東西買齊、吃頓輕鬆的」當唯一目標就好。
+      </p>
+      <div class="timeline reveal">
+
+        <div class="timeline-item">
+          <div class="timeline-item__icon">🛬</div>
+          <div class="timeline-card">
+            <div class="timeline-card__top">
+              <span class="timeline-card__time">下午抵達</span>
+              <h4>仁川／金浦機場入境</h4>
+            </div>
+            <div class="tags"><span class="tag tag--optional">必辦</span></div>
+            <p>入境後先辦好兩件事：① 便利商店或櫃檯買 T-money 交通卡（地鐵公車通用，超商可加值）② 領事先預訂的網卡／WiFi 蛋，或機場櫃檯辦 eSIM。</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-item__icon">🚄</div>
+          <div class="timeline-card">
+            <div class="timeline-card__top">
+              <span class="timeline-card__time">～1hr</span>
+              <h4>機場快線 AREX 或機場巴士進市區</h4>
+            </div>
+            <div class="tags"><span class="tag tag--chill">交通</span></div>
+            <p>仁川機場搭 AREX 直達車到首爾站最快 43 分鐘；行李多的話機場巴士可以直接到飯店樓下，更省事、更適合「慢活」調性。</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-item__icon">🏨</div>
+          <div class="timeline-card">
+            <div class="timeline-card__top">
+              <span class="timeline-card__time">傍晚</span>
+              <h4>入住明洞／首爾站周邊</h4>
+            </div>
+            <div class="tags"><span class="tag tag--chill">推薦住宿區</span></div>
+            <p>明洞交通最方便、離機場快線近、宵夜選擇多，很適合這種「吃喝為主」的行程；如果表哥想工作，選有大書桌、網路穩定的商務型飯店會更順。</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-item__icon">🍢</div>
+          <div class="timeline-card">
+            <div class="timeline-card__top">
+              <span class="timeline-card__time">晚上</span>
+              <h4>明洞街邊小吃初體驗</h4>
+            </div>
+            <div class="tags"><span class="tag tag--food">美食</span></div>
+            <p>龍捲風薯條、糖餅（hotteok）、起司熱狗、烤肉飯捲，邊走邊吃當作第一晚的暖身，不用正式坐下吃大餐。</p>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Myeongdong+Street+Food+Seoul" target="_blank" rel="noopener">📍 Google 地圖看明洞小吃街實景</a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-item__icon">🍖</div>
+          <div class="timeline-card">
+            <div class="timeline-card__top">
+              <span class="timeline-card__time">晚餐（可選）</span>
+              <h4>來一頓輕鬆烤肉配燒酒</h4>
+            </div>
+            <div class="tags"><span class="tag tag--optional">非必去</span><span class="tag tag--food">美食</span></div>
+            <p>時差還沒調整過來的話，也可以直接跳過、回飯店休息，第一晚不用急著把行程排滿。</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DAY 2 ============ -->
+  <section class="section section--soft day-section" id="day2">
+    <div class="wrap">
+      <div class="day-section__header reveal">
+        <span class="day-section__badge" style="background:#f6e6c2;">🏯</span>
+        <div>
+          <div class="day-section__date">Day 2 · 2026/9/20（日）</div>
+          <h2>傳統首爾＋市場美食</h2>
+        </div>
+      </div>
+      <p class="day-section__intro reveal">
+        今天唯一「正式景點」是景福宮，其他全部隨緣，晚上壓軸是廣藏市場的小吃巡禮。
+      </p>
+      <div class="timeline reveal">
+
+        <div class="timeline-item">
+          <div class="timeline-item__icon">😴</div>
+          <div class="timeline-card">
+            <div class="timeline-card__top">
+              <span class="timeline-card__time">10:00 前</span>
+              <h4>睡到自然醒，慢慢出門</h4>
+            </div>
+            <div class="tags"><span class="tag tag--chill">節奏</span></div>
+            <p>不用趕早，飯店附近隨便找間咖啡廳吃個早午餐再出發即可。</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-item__icon">🏯</div>
+          <div class="timeline-card">
+            <div class="timeline-card__top">
+              <span class="timeline-card__time">11:00-13:00</span>
+              <h4>景福宮＋光化門守衛交接儀式</h4>
+            </div>
+            <div class="tags"><span class="tag tag--optional">可只逛外觀</span><span class="tag tag--view">景點</span></div>
+            <p>韓國規模最大的宮殿，光化門前每天有守門將交接儀式（整點附近，建議現場確認時間）。就算不想買票進宮，光是在宮牆外拍照散步也很值得。</p>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Gyeongbokgung+Palace+Seoul" target="_blank" rel="noopener">📍 Google 地圖看景福宮實景照片</a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-item__icon">🐔</div>
+          <div class="timeline-card">
+            <div class="timeline-card__top">
+              <span class="timeline-card__time">13:00</span>
+              <h4>午餐：土俗村蔘雞湯</h4>
+            </div>
+            <div class="tags"><span class="tag tag--food">必吃美食</span></div>
+            <p>景福宮附近的排隊名店，糯米人蔘雞湯配一小杯人蔘酒，秋天喝一碗補氣又暖胃，是首爾旅遊清單上的經典款。</p>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Tosokchon+Samgyetang+Seoul" target="_blank" rel="noopener">📍 Google 地圖看土俗村照片與評價</a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-item__icon">🏘️</div>
+          <div class="timeline-card">
+            <div class="timeline-card__top">
+              <span class="timeline-card__time">14:00-16:00</span>
+              <h4>北村韓屋村 或 益善洞咖啡巷</h4>
+            </div>
+            <div class="tags"><span class="tag tag--optional">二選一即可</span><span class="tag tag--chill">拍照散策</span></div>
+            <p>想拍傳統韓屋屋頂就去北村；想找間老屋改建咖啡廳坐著發呆、順便讓表哥回個信，益善洞韓屋咖啡巷更適合。</p>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Ikseondong+Hanok+Cafe+Street+Seoul" target="_blank" rel="noopener">📍 Google 地圖看益善洞咖啡巷</a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-item__icon">🥟</div>
+          <div class="timeline-card">
+            <div class="timeline-card__top">
+              <span class="timeline-card__time">18:00-20:30</span>
+              <h4>廣藏市場小吃巡禮</h4>
+            </div>
+            <div class="tags"><span class="tag tag--food">必吃美食</span></div>
+            <p>綠豆煎餅（빈대떡）、生牛肉（육회）、傳說級海苔飯捲「毒藥飯捲」（마약김밥）、血腸（순대）都在這裡，攤位一攤接一攤，很適合兩個人分著吃、慢慢逛慢慢挑。</p>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Gwangjang+Market+Seoul" target="_blank" rel="noopener">📍 Google 地圖看廣藏市場實景與人氣攤位</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DAY 3 ============ -->
+  <section class="section day-section" id="day3">
+    <div class="wrap">
+      <div class="day-section__header reveal">
+        <span class="day-section__badge" style="background:#e3ede6;">☕</span>
+        <div>
+          <div class="day-section__date">Day 3 · 2026/9/21（一）</div>
+          <h2>潮流放空日：延南洞、聖水洞、漢江</h2>
+        </div>
+      </div>
+      <p class="day-section__intro reveal">
+        全程最鬆的一天，很適合表哥「邊玩邊上班」的步調——找間好咖啡廳坐下來，晚上再去漢江吃炸雞看夜景。
+      </p>
+      <div class="timeline reveal">
+
+        <div class="timeline-item">
+          <div class="timeline-item__icon">🥐</div>
+          <div class="timeline-card">
+            <div class="timeline-card__top">
+              <span class="timeline-card__time">早上不排行程</span>
+              <h4>飯店附近咖啡廳吃早午餐、順便辦公</h4>
+            </div>
+            <div class="tags"><span class="tag tag--chill">彈性</span></div>
+            <p>如果表哥今天要遠距開會，這個時段留給他，兩人各自安排也沒關係。</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-item__icon">🌿</div>
+          <div class="timeline-card">
+            <div class="timeline-card__top">
+              <span class="timeline-card__time">13:00-16:00</span>
+              <h4>延南洞／延禧洞 文青咖啡廳散策</h4>
+            </div>
+            <div class="tags"><span class="tag tag--chill">咖啡</span><span class="tag tag--shop">選物店</span></div>
+            <p>沿著「延南 Yeontral Park」小綠地散步，兩側全是質感咖啡廳、選物店、生活雜貨店，很適合走走停停、沒有目的地地晃。</p>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Yeonnam-dong+Yeontral+Park+Seoul" target="_blank" rel="noopener">📍 Google 地圖看延南洞街景</a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-item__icon">🏭</div>
+          <div class="timeline-card">
+            <div class="timeline-card__top">
+              <span class="timeline-card__time">16:00-18:00</span>
+              <h4>聖水洞：首爾的「布魯克林」</h4>
+            </div>
+            <div class="tags"><span class="tag tag--optional">可跳過</span><span class="tag tag--shop">打卡</span></div>
+            <p>舊工廠、倉庫改建的工業風咖啡廳和韓國原創品牌旗艦店（像貨櫃改建的 Common Ground），IG 打卡點密度很高，逛街跟拍照都適合。</p>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Seongsu-dong+Seoul" target="_blank" rel="noopener">📍 Google 地圖看聖水洞照片</a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-item__icon">🍗</div>
+          <div class="timeline-card">
+            <div class="timeline-card__top">
+              <span class="timeline-card__time">19:00-21:30</span>
+              <h4>漢江公園野餐：叫炸雞外送配啤酒</h4>
+            </div>
+            <div class="tags"><span class="tag tag--food">體驗必做</span></div>
+            <p>韓國人的招牌玩法——在漢江公園（推薦盤浦或汝矣島）鋪個野餐墊，用外送 App 叫炸雞跟啤酒直接送到江邊，運氣好還能碰上盤浦大橋的月光彩虹噴泉（需現場確認開放時段）。這是整趟行程最放鬆的橋段。</p>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Banpo+Hangang+Park+Seoul" target="_blank" rel="noopener">📍 Google 地圖看盤浦漢江公園</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DAY 4 ============ -->
+  <section class="section section--soft day-section" id="day4">
+    <div class="wrap">
+      <div class="day-section__header reveal">
+        <span class="day-section__badge" style="background:#e4e2f5;">🌆</span>
+        <div>
+          <div class="day-section__date">Day 4 · 2026/9/22（二）</div>
+          <h2>夜景與隱藏版美食</h2>
+        </div>
+      </div>
+      <p class="day-section__intro reveal">
+        南山塔可去可不去，今天真正的重頭戲是晚餐的醬油蟹——韓國人心中的「偷飯賊」，吃過一次就懂。
+      </p>
+      <div class="timeline reveal">
+
+        <div class="timeline-item">
+          <div class="timeline-item__icon">🗼</div>
+          <div class="timeline-card">
+            <div class="timeline-card__top">
+              <span class="timeline-card__time">11:00-13:00</span>
+              <h4>南山首爾塔（N Seoul Tower）</h4>
+            </div>
+            <div class="tags"><span class="tag tag--optional">非必去</span><span class="tag tag--view">景點</span></div>
+            <p>搭纜車上南山俯瞰首爾市景，天氣好視野不錯；如果想睡晚一點，這站直接跳過也完全不影響行程。</p>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=N+Seoul+Tower" target="_blank" rel="noopener">📍 Google 地圖看南山塔景色</a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-item__icon">🥙</div>
+          <div class="timeline-card">
+            <div class="timeline-card__top">
+              <span class="timeline-card__time">13:30</span>
+              <h4>午餐：梨泰院／漢南洞異國 Brunch</h4>
+            </div>
+            <div class="tags"><span class="tag tag--food">美食</span></div>
+            <p>吃膩韓式的話，梨泰院和漢南洞有很多質感西式／異國料理餐廳，也可以改吃部隊鍋（budae-jjigae）換個口味。</p>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Itaewon+Hannam-dong+Seoul" target="_blank" rel="noopener">📍 Google 地圖看梨泰院／漢南洞</a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-item__icon">🛍️</div>
+          <div class="timeline-card">
+            <div class="timeline-card__top">
+              <span class="timeline-card__time">14:30-17:30</span>
+              <h4>漢南洞選物店 或 回明洞補貨</h4>
+            </div>
+            <div class="tags"><span class="tag tag--optional">彈性</span><span class="tag tag--shop">購物</span></div>
+            <p>看當天心情決定：想找質感一點的韓國設計師品牌去漢南洞，想買面膜、彩妝、藥妝就直接殺回明洞。</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-item__icon">🦀</div>
+          <div class="timeline-card">
+            <div class="timeline-card__top">
+              <span class="timeline-card__time">19:00</span>
+              <h4>晚餐：醬油蟹（간장게장）吃到飽</h4>
+            </div>
+            <div class="tags"><span class="tag tag--food">隱藏版必吃</span></div>
+            <p>生醃醬油蟹配白飯，鮮甜鹹香，是很多台灣人來韓國前沒聽過、吃過一次就念念不忘的菜色，多集中在狎鷗亭、鐘路一帶，建議先查好當天營業的店家。</p>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Ganjang+Gejang+Restaurant+Seoul" target="_blank" rel="noopener">📍 Google 地圖看醬油蟹名店</a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-item__icon">🏬</div>
+          <div class="timeline-card">
+            <div class="timeline-card__top">
+              <span class="timeline-card__time">21:00</span>
+              <h4>東大門 DDP＋深夜購物</h4>
+            </div>
+            <div class="tags"><span class="tag tag--optional">非必去</span><span class="tag tag--shop">夜生活</span></div>
+            <p>東大門設計廣場（DDP）的流線造型建築夜拍很出片，旁邊 Doota、Migliore 等商場很多營業到凌晨，逛累了行程也差不多告一段落。</p>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Dongdaemun+Design+Plaza+Seoul" target="_blank" rel="noopener">📍 Google 地圖看 DDP 夜景</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DAY 5 ============ -->
+  <section class="section day-section" id="day5">
+    <div class="wrap">
+      <div class="day-section__header reveal">
+        <span class="day-section__badge" style="background:#efeaf5;">🧳</span>
+        <div>
+          <div class="day-section__date">Day 5 · 2026/9/23（三）</div>
+          <h2>賦歸日：輕鬆收尾</h2>
+        </div>
+      </div>
+      <p class="day-section__intro reveal">
+        最後一天不排硬行程，把時間留給早餐和戰利品採購。
+      </p>
+      <div class="timeline reveal">
+
+        <div class="timeline-item">
+          <div class="timeline-item__icon">🍚</div>
+          <div class="timeline-card">
+            <div class="timeline-card__top">
+              <span class="timeline-card__time">上午</span>
+              <h4>補一頓念念不忘的早餐</h4>
+            </div>
+            <div class="tags"><span class="tag tag--optional">隨心</span></div>
+            <p>回味這幾天最喜歡的一餐，或是找間飯店附近的道地早餐店，不用趕行程，慢慢吃。</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-item__icon">🛒</div>
+          <div class="timeline-card">
+            <div class="timeline-card__top">
+              <span class="timeline-card__time">視班機時間</span>
+              <h4>樂天超市／機場免稅店採買伴手禮</h4>
+            </div>
+            <div class="tags"><span class="tag tag--shop">戰利品</span></div>
+            <p>辛拉麵、蜂蜜奶油杏仁、香蕉牛奶、面膜都是經典必買，機場也有超市可以最後補貨，不用特別空出太多時間。</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-item__icon">✈️</div>
+          <div class="timeline-card">
+            <div class="timeline-card__top">
+              <span class="timeline-card__time">依航班</span>
+              <h4>前往機場，賦歸</h4>
+            </div>
+            <div class="tags"><span class="tag tag--chill">交通</span></div>
+            <p>建議搭機前 3 小時抵達機場，AREX 或機場巴士都可預留約 1 小時車程，慢慢走不趕時間。</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOD ============ -->
+  <section class="section section--soft" id="food">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="section__kicker">Food List</span>
+        <h2>首爾必吃清單</h2>
+        <p>行程之外的美食懶人包，隨時可以插進任何一天，或單純當作點餐靈感。</p>
+      </div>
+      <div class="food-grid reveal">
+
+        <div class="food-card">
+          <span class="food-card__icon">🥩</span>
+          <h3>韓式烤肉 Samgyeopsal / Galbi</h3>
+          <p>厚切五花肉或牛小排，生菜包肉配大蒜、味噌，配燒酒是永遠不會錯的選擇。</p>
+        </div>
+
+        <div class="food-card">
+          <span class="food-card__icon">🍗</span>
+          <h3>炸雞配啤酒 Chimaek</h3>
+          <p>韓國人的深夜心靈食物，醬油／蒜味／原味都推薦，漢江野餐首選。</p>
+        </div>
+
+        <div class="food-card">
+          <span class="food-card__icon">🐔</span>
+          <h3>蔘雞湯 Samgyetang</h3>
+          <p>糯米人蔘雞湯，秋天喝一碗補氣暖身，土俗村是最有名的排隊店。</p>
+        </div>
+
+        <div class="food-card">
+          <span class="food-card__icon">🥞</span>
+          <h3>廣藏市場小吃</h3>
+          <p>綠豆煎餅、生牛肉、毒藥飯捲、血腸，一次吃齊道地市場美食。</p>
+        </div>
+
+        <div class="food-card">
+          <span class="food-card__icon">🦀</span>
+          <h3>醬油蟹 Ganjang Gejang</h3>
+          <p>生醃蟹配醬油醃汁，鮮甜濃郁到被稱為「偷飯賊」，隱藏版必吃。</p>
+        </div>
+
+        <div class="food-card">
+          <span class="food-card__icon">🍲</span>
+          <h3>部隊鍋 Budae-jjigae</h3>
+          <p>火腿、香腸、泡麵一起煮的辣味鍋物，戰後歷史滋味，超級下飯。</p>
+        </div>
+
+        <div class="food-card">
+          <span class="food-card__icon">🍡</span>
+          <h3>路邊小吃拼盤</h3>
+          <p>辣炒年糕、糖餅、起司熱狗、龍捲風薯條，明洞和弘大街頭隨處可見。</p>
+        </div>
+
+        <div class="food-card">
+          <span class="food-card__icon">☕</span>
+          <h3>咖啡＋雪冰</h3>
+          <p>聖水洞、延南洞精品咖啡文化正夯，配一碗雪冰（Bingsu）當下午茶剛剛好。</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BUSAN Q&A ============ -->
+  <section class="section" id="busan">
+    <div class="wrap">
+      <div class="callout reveal">
+        <div>
+          <span class="section__kicker">Q&amp;A</span>
+          <h2>釜山離首爾遠嗎？順路可以去嗎？</h2>
+        </div>
+        <div class="callout-grid">
+          <div class="callout-fact">
+            <span class="callout-fact__num">約 325 公里</span>
+            <p>首爾到釜山的直線距離，大約是台北到高雄的距離感，不是「搭捷運就到」的等級。</p>
+          </div>
+          <div class="callout-fact">
+            <span class="callout-fact__num">2.5 小時起</span>
+            <p>要靠 KTX／SRT 高速鐵路，最快也要約 2.5 小時，等於高鐵等級的城際列車，不是捷運或 Uber 能取代的距離。</p>
+          </div>
+          <div class="callout-fact">
+            <span class="callout-fact__num">來回 5 小時＋</span>
+            <p>如果當天來回，光坐車就要吃掉大半天，跟這趟「慢慢晃」的調性完全相反。</p>
+          </div>
+        </div>
+        <div class="callout-verdict">
+          <strong>建議：這趟先不排釜山。</strong>
+          把時間留給首爾好好放鬆，釜山本身就值得單獨排 2～3 天（海雲台沙灘、甘川洞文化村、札嘎其市場），更適合當作「下一趟」的主角，而不是塞進這次的行程裡。
+        </div>
+        <div class="callout-verdict" style="background: rgba(111,156,133,0.2); border-color: rgba(111,156,133,0.5);">
+          <strong>順帶一提：Uber 在韓國不流行。</strong>
+          本地叫車主要用「Kakao T」App，先在台灣下載好、綁定信用卡，首爾市區叫車會方便很多；Uber 雖然能用，但實際上是跟當地計程車合作叫車，使用率遠不如 Kakao T。
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PREP ============ -->
+  <section class="section section--soft" id="prep">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="section__kicker">Before You Go</span>
+        <h2>行前準備懶人包</h2>
+        <p>第一次去韓國的實用小抄，把這些準備好，行程就能真的「隨性」。</p>
+      </div>
+
+      <div class="prep-grid reveal">
+        <div class="prep-card">
+          <h3>🚇 交通</h3>
+          <ul>
+            <li>T-money 交通卡：超商可買可加值，地鐵、公車、部分計程車通用</li>
+            <li>導航請用 Naver Map 或 KakaoMap，Google Maps 在韓國的路線導航功能有限</li>
+            <li>叫車用「Kakao T」App，比 Uber 更普及</li>
+            <li>仁川機場到市區：AREX 機場快線最快 43 分鐘，或搭機場巴士直達飯店</li>
+          </ul>
+        </div>
+
+        <div class="prep-card">
+          <h3>💳 金錢</h3>
+          <ul>
+            <li>信用卡接受度很高，但傳統市場、路邊攤建議準備一些現金</li>
+            <li>領現金找標示「Global」的 ATM，海外提款較有保障</li>
+            <li>小費文化不存在，餐廳不用另外給小費</li>
+          </ul>
+        </div>
+
+        <div class="prep-card">
+          <h3>🌤️ 天氣與穿搭</h3>
+          <ul>
+            <li>9 月下旬首爾早晚溫差大：白天約 24～27°C，晚上約 15～18°C</li>
+            <li>建議洋蔥式穿搭，帶一件薄外套或針織外套應付早晚</li>
+            <li>楓葉季通常在 10 月下旬～11 月初，這次去還看不到滿山紅葉</li>
+            <li>偶有秋雨，建議帶把輕便雨傘</li>
+          </ul>
+        </div>
+
+        <div class="prep-card">
+          <h3>🔌 其他小提醒</h3>
+          <ul>
+            <li>插座是兩孔圓形（220V），跟台灣扁平插頭不同，記得帶轉接頭</li>
+            <li>Papago 翻譯 App 很好用，餐廳點餐、路牌翻譯都靠它</li>
+            <li>建議先辦 eSIM 或租 WiFi 蛋，落地就能上網叫車、查地圖</li>
+            <li>行動電源記得帶，逛街拍照＋導航很耗電</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="budget-table-wrap">
+        <table class="budget">
+          <thead>
+            <tr>
+              <th>項目</th>
+              <th>每人每天預估（新台幣）</th>
+              <th>備註</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>住宿（雙人分攤）</td>
+              <td>約 1,500～2,500 元</td>
+              <td>明洞／首爾站商務飯店行情</td>
+            </tr>
+            <tr>
+              <td>三餐＋咖啡</td>
+              <td>約 800～1,200 元</td>
+              <td>市場小吃便宜、烤肉／醬油蟹單價較高</td>
+            </tr>
+            <tr>
+              <td>市區交通</td>
+              <td>約 150～250 元</td>
+              <td>T-money 地鐵公車為主</td>
+            </tr>
+            <tr>
+              <td>景點門票（若進宮／上塔）</td>
+              <td>約 100～300 元</td>
+              <td>大多行程為免費散步型景點</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="budget-note">＊僅供概估，實際金額會依匯率、消費習慣與購物量有落差，購物、伴手禮費用未列入。</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>
+      各景點與餐廳皆附上「📍 Google 地圖」連結，可直接查看最新實景照片與評價，比固定圖片更即時準確。
+    </p>
+    <p>祝表哥出差順利，也祝我們兩個吃得開心、逛得盡興 🍻</p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="回到頂端">↑</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
